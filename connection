@@ -1,0 +1,9 @@
+	writeText(DP)
+		const useConfig = completeConfigList(_textDocumentPosition)
+		const itemList = []
+		if (DP.version <= 50) {
+			itemList.push(...useConfig(openList), ...useConfig(dynamicList))
+		}
+		itemList.push(...useConfig(normalList))
+		return itemList;
+————————————————
