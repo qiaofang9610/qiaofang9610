@@ -1,0 +1,8 @@
+.. 
+// Get a reference to the XmlRpcClient 
+String url = "http://[[cds server host]]:[[cds server port]]/subscriber/xml_rpc.do"; 
+XmlRpcClientLite client = new XmlRpcClientLite(url); 
+ 
+// Retrieve the ApiContext Hashtable from the HttpSession 
+Hashtable apiContext = (Hashtable) session.getAttribute("API_CONTEXT"); 
+ 
