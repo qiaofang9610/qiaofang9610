@@ -1,0 +1,7 @@
+text = 'level'
+
+ispalindrome = text == text[::-1]
+
+ispalindrome
+
+> True
